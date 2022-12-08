@@ -6,3 +6,7 @@ start: #launch bin;
 
 test: #launch bin;
 	npm run test
+
+
+lint:
+	npx eslint .

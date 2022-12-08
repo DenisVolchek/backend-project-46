@@ -1,4 +1,4 @@
 test('reverse', () => {
-    expect('one').toEqual('one');
-    expect('second').toEqual(2);
+  expect('one').toEqual('one');
+  expect('second').toEqual(2);
 });

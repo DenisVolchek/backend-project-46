@@ -1,3 +1,1 @@
-export default (one, two) => {
-    return 'HELLO FROM PACKAGE';
-}
+export default (one, two) => 'HELLO FROM PACKAGE';
