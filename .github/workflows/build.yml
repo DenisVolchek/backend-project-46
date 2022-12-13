@@ -7,10 +7,15 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
+        
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
+          
+      - run: npm ci
+      
       - name: Lint code
         run: make lint
+        
       - name: Test
         run: nake test
