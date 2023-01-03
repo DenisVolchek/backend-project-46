@@ -1,8 +1,11 @@
 import { readFileSync } from 'fs';
+import parseInput from './parsers.js';
 
-const getFileAsString = (path) => {
-  const readedFile = readFileSync(path);
-  return JSON.parse(readedFile);
+const getFileAsString = (filepath) => {
+  const parser = parseInput(filepath);
+  const readedFile = readFileSync(filepath);
+
+  return parser(readedFile);
 };
 
 export default (path1, path2) => {

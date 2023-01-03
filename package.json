@@ -21,7 +21,8 @@
   },
   "homepage": "https://github.com/DenisVolchek/backend-project-46#readme",
   "dependencies": {
-    "commander": "^9.4.1"
+    "commander": "^9.4.1",
+    "js-yaml": "^4.1.0"
   },
   "devDependencies": {
     "eslint": "^8.29.0",
